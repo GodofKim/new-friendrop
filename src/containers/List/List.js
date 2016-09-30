@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { DropList, LetterList, ContactList } from '../';
 
 const propTypes = {
 
@@ -19,13 +20,22 @@ class List extends Component {
 
   getPage () {
     const dropPage = (
-      <h3 className="brand-logo">Today Drop</h3>
+      <div>
+        <h3 className="brand-logo">Today Drop</h3>
+        <DropList />
+      </div>
     );
     const letterPage = (
-      <h3 className="brand-logo">Letter</h3>
+      <div>
+        <h3 className="brand-logo">Letter</h3>
+        <LetterList />
+      </div>
     );
     const contactPage = (
-      <h3 className="brand-logo">Contact</h3>
+      <div>
+        <h3 className="brand-logo">Contact</h3>
+        <ContactList />
+      </div>
     );
     const errorPage = (
       <h3>Error...</h3>
