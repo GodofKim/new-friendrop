@@ -33,7 +33,6 @@ export function getListItemRequest(item, isInitial, listType, id, username) {
     return axios.get(url, {
       headers: { authorization: localStorage.getItem('token') }})
       .then((response) => {
-        console.log(response);
         dispatch(getListItemSuccess(item, response.data, isInitial, listType));
       })
       .catch((error) => {
