@@ -85,3 +85,11 @@ export function registerFailure(error) {
         error
     };
 }
+
+export function logout(){
+  localStorage.removeItem('token');
+
+  return {
+    type: AUTH_LOGOUT
+  };
+}
