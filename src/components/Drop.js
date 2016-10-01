@@ -12,8 +12,8 @@ class Drop extends Component {
     };
 
     return(
-      <li>
-        <h3>{drop.nickname}</h3>
+      <li className="card">
+        <h4>{drop.nickname}</h4>
         <p>{drop.name}</p>
         <p>{drop.gender}</p>
         <p>{drop.school} {drop.major}</p>
