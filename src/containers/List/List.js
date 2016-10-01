@@ -21,6 +21,8 @@ class List extends Component {
     };
 
     this.getPage = this.getPage.bind(this);
+    this.loadNewItem = this.loadNewItem.bind(this);
+    this.loadOldItem = this.loadOldItem.bind(this);
   }
 
   componentWillMount() {
@@ -63,8 +65,9 @@ class List extends Component {
     // 아이템 요청 시작
     this.props.getListItemRequest(item, true).then(
       () => {
-        console.log("componentDidMount", this.props.drop);
-        //loadUntilScrollable();
+        console.log(item);
+        console.log("componentDidMount", this.props[item].list.data);
+        loadUntilScrollable();
       }
     );
 
