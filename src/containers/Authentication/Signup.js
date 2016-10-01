@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { Authentication } from '../components';
+import { Authentication } from '../../components';
 import { connect } from 'react-redux';
-import { registerRequest } from '../actions/authentication';
+import { registerRequest } from '../../actions/authentication';
 import { browserHistory } from 'react-router';
 
 class Signup extends React.Component {

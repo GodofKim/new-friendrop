@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { HomeContent } from '../components';
+import { HomeContent } from '../../components';
 
 const propTypes = {
 

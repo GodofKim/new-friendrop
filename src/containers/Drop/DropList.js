@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Drop from '../components/Drop';
+import Drop from '../../components/Drop/Drop';
 
 const propTypes = {
 
