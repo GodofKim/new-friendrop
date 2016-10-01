@@ -11,13 +11,23 @@ const defaultProps = {
 
 class DropList extends Component {
 
-  constructor(props) {
-    super(props);
+  shouldComponentUpdate(nextProps, nextState){
+    return (JSON.stringify(this.props) !== JSON.stringify(nextProps));
   }
 
   render() {
+    const mapToComponents = (drops) => {
+      return drops.map((drop, i) => {
+        return (
+          <Drop drop={drop} key={drop._id} index={i} />
+        );
+      });
+    }
+
     return(
-      <div>DropList</div>
+      <div>
+        {mapToComponents(this.props.data)}
+      </div>
     );
   }
 }
