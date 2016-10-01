@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Logout } from './components';
 import {
   App, Login, Register,
   Signup, Home, DropList,
@@ -38,6 +39,7 @@ ReactDOM.render(
         <Route path="letter" component={RequireAuth(List)}/>
         <Route path="contact" component={RequireAuth(List)}/>
         <Route path="profile" component={RequireAuth(Profile)}/>
+        <Route path="logout" component={Logout}/>
       </Route>
     </Router>
   </Provider>, rootElement);
