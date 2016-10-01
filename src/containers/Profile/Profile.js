@@ -22,11 +22,8 @@ class Profile extends Component {
 
   render() {
     return(
-      <div>
-        <button type="button">수정하기</button>
-        <div className="col s12 m9 l10">
-          <ProfileCard profile={this.props.profile}/>
-        </div>
+      <div className="col s12 m9 l10">
+        <ProfileCard profile={this.props.profile}/>
       </div>
     );
   }
