@@ -9,7 +9,7 @@ import {
   Profile, List
  } from './containers';
 import { AUTH_LOGIN_SUCCESS } from './actions/ActionTypes';
-import RequireAuth from './containers/require_auth';
+import RequireAuth from './containers/Authentication/require_auth';
 import './index.css';
 
 // Redux

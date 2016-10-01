@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Letter } from '../components';
+import { Letter } from '../../components';
 
 const propTypes = {
 
