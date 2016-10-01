@@ -92,22 +92,24 @@ class List extends Component {
   }
 
   getPage () {
+    const data = this.props[this.state.item].list.data;
+
     const dropPage = (
       <div>
         <h3 className="brand-logo">Today Drop</h3>
-        <DropList />
+        <DropList data={data} />
       </div>
     );
     const letterPage = (
       <div>
         <h3 className="brand-logo">Letter</h3>
-        <LetterList />
+        <LetterList data={data} />
       </div>
     );
     const contactPage = (
       <div>
         <h3 className="brand-logo">Contact</h3>
-        <ContactList />
+        <ContactList data={data} />
       </div>
     );
     const errorPage = (
