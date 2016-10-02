@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import Contact from '../../components/Contact/Contact';
 
 const propTypes = {
 
@@ -10,13 +11,23 @@ const defaultProps = {
 
 class ContactList extends Component {
 
-  constructor(props) {
-    super(props);
+  shouldComponentUpdate(nextProps, nextState){
+    return (JSON.stringify(this.props) !== JSON.stringify(nextProps));
   }
 
   render() {
+    const mapToComponents = (contacts) => {
+      return contacts.map((contact, i) => {
+        return (
+          <Contact contact={contact} key={contact._id} index={i} />
+        );
+      });
+    };
+
     return(
-      <div>ContactList</div>
+      <div>
+        {mapToComponents(this.props.data)}
+      </div>
     );
   }
 }
