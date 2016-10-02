@@ -91,6 +91,12 @@ class List extends Component {
     });
   }
 
+  componentWillUnmount() {
+    // REMOVE WINDOWS SCROLL LISTENER
+    $(window).unbind();
+
+  }
+
   getPage () {
     const data = this.props[this.state.item].list.data;
 
