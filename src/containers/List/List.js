@@ -150,7 +150,7 @@ class List extends Component {
     let item = this.state.item;
 
     // CANCEL IF USER IS READING THE LAST PAGE
-    if(this.props.isLast){
+    if(this.props[item].list.isLast){
       return new Promise(
         (resolve, reject) => {
           resolve();
