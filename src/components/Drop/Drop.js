@@ -12,7 +12,7 @@ class Drop extends Component {
     };
 
     return(
-      <li className="card">
+      <li className="card-panel">
         <h4>{drop.nickname}</h4>
         <p>{drop.name}</p>
         <p>{drop.gender}</p>
