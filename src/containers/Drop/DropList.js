@@ -22,7 +22,7 @@ class DropList extends Component {
           <Drop drop={drop} key={drop._id} index={i} />
         );
       });
-    }
+    };
 
     return(
       <div>
