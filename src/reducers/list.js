@@ -47,6 +47,10 @@ export default function list(state, action) {
       });
     case types.LIST_ITEM_GET_SUCCESS:
       if(action.isInitial) {
+        action.data.sort((a,b) => {
+          return new Date(b.date) - new Date(a.date);
+        });
+
         return update(state, {
           [action.item]: {
             list: {
