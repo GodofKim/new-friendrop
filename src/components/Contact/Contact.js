@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 class Contact extends Component {
     render() {
         const contact = this.props.contact;
-        const profilePath = `/profile/${contact.email}`;
+        const profilePath = `/profile/${contact.profileId}`;
         const date = {
             year: new Date(contact.date).getFullYear(),
             month: new Date(contact.date).getMonth(),

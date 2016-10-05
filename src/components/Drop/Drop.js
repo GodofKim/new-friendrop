@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 class Drop extends Component {
   render() {
     const drop = this.props.drop;
-    const profilePath = `/profile/${drop.email}`;
+    const profilePath = `/profile/${drop.profileId}`;
     const date = {
       year: new Date(drop.date).getFullYear(),
       month: new Date(drop.date).getMonth(),

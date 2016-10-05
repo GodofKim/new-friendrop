@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 class Letter extends Component {
     render() {
         const letter = this.props.letter;
-        const profilePath = `/profile/${letter.email}`;
+        const profilePath = `/profile/${letter.profileId}`;
         const date = {
             year: new Date(letter.date).getFullYear(),
             month: new Date(letter.date).getMonth(),
