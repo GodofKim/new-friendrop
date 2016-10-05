@@ -6,8 +6,11 @@ import DropList from './Drop/DropList';
 import LetterList from './Letter/LetterList';
 import ContactList from './Contact/ContactList';
 import Profile from './Profile/Profile';
+import ProfileOther from './Profile/ProfileOther';
 import List from './List/List';
 
 export { App, Login, Home, Signup, DropList,
   LetterList, ContactList,
-  Profile, List};
+  Profile, List,
+  ProfileOther
+};

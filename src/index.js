@@ -6,7 +6,7 @@ import {
   App, Login, Register,
   Signup, Home, DropList,
   LetterList, ContactList,
-  Profile, List
+  Profile, List, ProfileOther
  } from './containers';
 import { AUTH_LOGIN_SUCCESS } from './actions/ActionTypes';
 import RequireAuth from './containers/Authentication/require_auth';
@@ -39,6 +39,7 @@ ReactDOM.render(
         <Route path="letter" component={RequireAuth(List)}/>
         <Route path="contact" component={RequireAuth(List)}/>
         <Route path="profile" component={RequireAuth(Profile)}/>
+        <Route path="profile/:id" component={RequireAuth(ProfileOther)}/>
         <Route path="logout" component={Logout}/>
       </Route>
     </Router>
